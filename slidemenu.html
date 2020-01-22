@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<title>Responsive Menu</title>
+	<link rel="stylesheet" type="text/css" href="slidemenu.css">
+</head>
+<body>
+	<div class="menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="menu-bar">
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="box.html">About</a>
+			</li>
+			<li>
+				<a href="">Services</a>
+			</li>
+			<li>
+				<a href="">Options</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+		
+	</div>
+	<div class="logo">
+		<div class="netflix">
+			<span></span>
+			<span></span>
+			<span></span>
+			
+		</div>
+		<h3>NETFLIX</h3>
+		
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu').click(function(){
+				$('.menu').toggleClass('active')
+				$('.menu-bar').toggleClass('active')
+			})
+		})
+	</script>
+</body>
+</html>
